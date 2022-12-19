@@ -19,12 +19,11 @@ const Debit = (props) => {
             return [...prevVal , Number(inputAmount)] ;
         }))
         console.log(DAmount) ;
-        props.func(DAmount) ;
     }
 
     useEffect(() => {
         props.func(DAmount) ;
-    } , [])
+    } , [DAmount])
 
     return (
         <div className='flex flex-col'>
